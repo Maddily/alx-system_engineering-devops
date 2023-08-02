@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -paXm --group-directories-first
+ls -mpa | sort
