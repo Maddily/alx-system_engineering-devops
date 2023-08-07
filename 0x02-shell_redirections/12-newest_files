@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | cut -d ' ' -f 10- | head
+ls -lt | grep '^-' | head | tr -s ' ' | cut -d ' ' -f 9 
