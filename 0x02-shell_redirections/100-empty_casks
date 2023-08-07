@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | sort | uniq
+find . -type f -empty -or -type d -empty | sort | uniq
