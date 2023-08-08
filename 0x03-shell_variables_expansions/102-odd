@@ -1,2 +1,2 @@
 #!/bin/bash
-nl | tr -d ' ' | grep "^[13579]" | tr -d '[0-9]' | cut -c2-
+cat -n | head -n "$(($(wc -l | cut -d ' ' -f '1') / 2 + 1))" | tail -n +1 | cut -f '2-'
