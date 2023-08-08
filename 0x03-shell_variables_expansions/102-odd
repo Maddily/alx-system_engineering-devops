@@ -1,0 +1,2 @@
+#!/bin/bash
+nl | tr -d ' ' | grep "^[13579]" | tr -d '[0-9]' | cut -c2-
