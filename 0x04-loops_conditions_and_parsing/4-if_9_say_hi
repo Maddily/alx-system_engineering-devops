@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Displays a string 10 times, where "Hi" is displayed
+#+ after the 9th iteration
+
+i=0
+
+while [ $i -lt 10 ]
+do
+    echo "Best School"
+    if [ $i -eq 8 ]
+    then
+        echo "Hi"
+    fi
+    (( i++ ))
+done
