@@ -1,7 +1,7 @@
 # Distributed Web Infrastructure
 <hr>
 
-<img src="https://raw.githubusercontent.com/Maddily/0x09-web_infrastructure_design/master/1-distributed_web_infrastructure.png" alt="Distributed Web Infrastructure">
+<img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/0-simple_web_stack.png" alt="Distributed Web Infrastructure">
 
 ## Description
 <hr>
