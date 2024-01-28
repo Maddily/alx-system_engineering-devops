@@ -1,15 +1,12 @@
 # Distributed Web Infrastructure
-<hr>
 
 <img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/0-simple_web_stack.png" alt="Distributed Web Infrastructure">
 
 ## Description
-<hr>
 
 This is a two-server web infrastructure that hosts the website www.foobar.com.
 
 ## Specifications and Details
-<hr>
 
 #### Load Balancer Distribution Algorithm
 Round Robin distribution algorithm is used. It passes each new connection request to the next server in line, eventually distributing connections evenly across the array of machines being load balanced.
