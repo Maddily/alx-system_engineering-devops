@@ -1,15 +1,12 @@
 # Secured and Monitored Web Infrastructure
-<hr>
 
 <img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/2-secured_and_monitored_web_infrastructure.png" alt="Secured and Monitored Web Infrastructure">
 
 ## Description
-<hr>
 
 This is a three-server web infrastructure that hosts the website www.foobar.com. It's secured, monitored and serves encrypted traffic.
 
 ## Specifications and Details
-<hr>
 
 #### Firewalls
 Firewalls are used in this infrastructure in order to control incoming and outgoing network traffic. They act as a barrier between the servers and the external network, protecting the servers from unauthorized access and potential cyber threats.
