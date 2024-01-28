@@ -1,7 +1,7 @@
 # Secured and Monitored Web Infrastructure
 <hr>
 
-<img src="https://raw.githubusercontent.com/Maddily/0x09-web_infrastructure_design/master/2-secured_and_monitored_web_infrastructure.png" alt="Secured and Monitored Web Infrastructure">
+<img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/2-secured_and_monitored_web_infrastructure.png" alt="Secured and Monitored Web Infrastructure">
 
 ## Description
 <hr>
