@@ -1,7 +1,7 @@
 # Scaled-up Web Infrastructure
 <hr>
 
-<img src="https://raw.githubusercontent.com/Maddily/0x09-web_infrastructure_design/master/3-scale_up.png" alt="Scaled-up Web Infrastructure">
+<img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/3-scale_up.png" alt="Scaled-up Web Infrastructure">
 
 ## Description
 <hr>
