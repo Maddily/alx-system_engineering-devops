@@ -1,15 +1,12 @@
 # Scaled-up Web Infrastructure
-<hr>
 
 <img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/3-scale_up.png" alt="Scaled-up Web Infrastructure">
 
 ## Description
-<hr>
 
 This is a scaled-up web infrastructure that hosts the website www.foobar.com.
 
 ## Specifications and Details
-<hr>
 
 #### Additional (fourth) server
 Adding a fourth server improves scalability and distributes the workload, enhancing the system's capacity to handle more traffic and providing redundancy.
