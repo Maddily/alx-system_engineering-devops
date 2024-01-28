@@ -1,7 +1,7 @@
 # Simple Web Stack
 <hr>
 
-<img src="https://raw.githubusercontent.com/Maddily/0x09-web_infrastructure_design/master/0-simple_web_stack.png" alt="Simple Web Stack">
+<img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/0-simple_web_stack.png" alt="Simple Web Stack">
 
 ## Description
 <hr>
