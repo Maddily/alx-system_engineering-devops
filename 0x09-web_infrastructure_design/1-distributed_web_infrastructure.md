@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a two-server web infrastructure that hosts the website www.foobar.com.
+This is a web infrastructure that hosts the website www.foobar.com.
 
 ## Specifications and Details
 
