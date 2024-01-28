@@ -1,15 +1,12 @@
 # Simple Web Stack
-<hr>
 
 <img src="https://raw.githubusercontent.com/Maddily/alx-system_engineering-devops/master/0x09-web_infrastructure_design/0-simple_web_stack.png" alt="Simple Web Stack">
 
 ## Description
-<hr>
 
 This is a one-server web infrastructure that hosts the website that is reachable via www.foobar.com.
 
 ## Specifications and Details
-<hr>
 
 #### What is a server?
 It’s a software or program that runs on an operating system on a computer in a data center. The word server sometimes refers to a physical computer or the server software running on a computer.
@@ -38,16 +35,16 @@ The server is the SPOF.
 Because this is a single-server setup without redundancy, there’s no backup. If the server goes down for any reason, there is no alternative system to take over, leading to service downtime.
 
 #### When new code is deployed and the web server needs to be restarted, a temporary downtime may occur because:
-    - While the web server is restarting, it temporarily stops serving requests and existing connections may be interrupted.
-    - If the code deployment involves changes to application components or dependencies, the application may need to restart as well. This can contribute to the overall downtime.
-    - If the code deployment includes changes to the database schema, database connections or migrations might be required. This can contribute to downtime.
+- While the web server is restarting, it temporarily stops serving requests and existing connections may be interrupted.
+- If the code deployment involves changes to application components or dependencies, the application may need to restart as well. This can contribute to the overall downtime.
+- If the code deployment includes changes to the database schema, database connections or migrations might be required. This can contribute to downtime.
 ##### To minimize downtime during code deployment:
-    - Use backup servers, ensuring that at least some of the servers remain operational at all times.
-    - Use a load balancer to distribute traffic across multiple servers. During deployment, the load balancer can redirect requests to healthy servers while the others are being updated.
+- Use backup servers, ensuring that at least some of the servers remain operational at all times.
+- Use a load balancer to distribute traffic across multiple servers. During deployment, the load balancer can redirect requests to healthy servers while the others are being updated.
 
 #### Why can this infrastructure not scale and handle traffic that would exceed the server capacity?
-    - A single server has finite resources (CPU, memory, disk I/O). It may not efficiently scale to meet the demands of a growing user base.
-    - Scaling by upgrading the server's hardware has limitations.
+- A single server has finite resources (CPU, memory, disk I/O). It may not efficiently scale to meet the demands of a growing user base.
+- Scaling by upgrading the server's hardware has limitations.
 ##### To address these limitations:
-    - Add more servers to the infrastructure to handle increased demand and use a load balancer.
-    - Employ auto-scaling solutions that dynamically adjust the number of servers based on traffic patterns.
+- Add more servers to the infrastructure to handle increased demand and use a load balancer.
+- Employ auto-scaling solutions that dynamically adjust the number of servers based on traffic patterns.
