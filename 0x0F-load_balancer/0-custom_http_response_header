@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Configure a brand new Ubuntu machine
+apt-get update
+apt-get install -y nginx
+
+echo "Hello World!" > /var/www/html/index.html
+
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+
+new_string="server_name _;\n\trewrite ^\/redirect_me http:\/\/pixelspark.tech permanent;"
+sed -i "s/server_name _;/$new_string/" /etc/nginx/sites-enabled/default
+
+error_block="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+
+sed -i "s/listen 80 default_server;/$error_block/" /etc/nginx/sites-enabled/default
+
+add_header_command="add_header X-Served-By $HOSTNAME;\n\t# SSL configuration"
+sed -i "s/# SSL configuration/$add_header_command/" /etc/nginx/sites-enabled/default
+
+service nginx restart
