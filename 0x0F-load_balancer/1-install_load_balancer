@@ -29,8 +29,9 @@ frontend http_front
 
 backend http_back
         balance roundrobin
-        server web-01 100.25.211.5:80 check
-        server web-02 54.90.20.242:80 check
+        mode http
+        server 500720-web-01 100.25.211.5:80 check
+        server 500720-web-02 54.90.20.242:80 check
 
 defaults
         log     global
@@ -47,6 +48,8 @@ defaults
         errorfile 502 /etc/haproxy/errors/502.http
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http" | sudo tee /etc/haproxy/haproxy.cfg > /dev/null
+
+echo "ENABLED=1" > /etc/default/haproxy
 
 sudo systemctl start haproxy
 sudo systemctl enable haproxy
