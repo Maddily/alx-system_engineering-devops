@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Replace default in sites-enabled with default in sites-available
+# and create a symbolic link.
+ln -fs /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
