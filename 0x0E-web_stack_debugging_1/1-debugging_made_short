@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Make Nginx listen on port 80
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx start
+pkill -o nginx
