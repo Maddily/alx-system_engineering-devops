@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Display information about subdomains.
+
+query_dns() {
+    local domain="$1"
+    local subdomain="$2"
+
+    if [ -z "$subdomain" ]; then
+        subdomains=("www" "lb-01" "web-01" "web-02")
+    else
+        subdomains=("$subdomain")
+    fi
+
+    for sub in "${subdomains[@]}"; do
+        destination=$(dig "$sub.$domain" +short)
+        record_type=$(dig "$sub.$domain" +noall +answer | awk '$3 ~ /IN/ { print $4 }')
+        echo "The subdomain $sub is a $record_type record and points to $destination"
+    done
+}
+
+if [ "$#" -lt 1 ] || [ "$#" -gt 2 ]; then
+    echo "Usage: $0 domain [subdomain]" >&2
+    exit 1
+fi
+
+query_dns "$1" "$2"
