@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Make nginx run as nginx user
+sed -i 's/#?user .*/user nginx/' /etc/nginx/nginx.conf
+# Make nginx listen on port 8080
+sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+# Give permissions for nginx config file
+chmod 644 /etc/nginx/nginx.conf
+pkill apache2
+# Start nginx service as nginx user
+su -c service nginx start nginx
