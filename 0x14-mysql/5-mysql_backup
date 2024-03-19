@@ -4,8 +4,5 @@
 current_date=$(date +"%d-%m-%Y")
 password="$1"
 
-if mysqldump -u root -p"$password" --all-databases > backup.sql; then
-  if tar -czf "$current_date.tar.gz" backup.sql; then
-    rm backup.sql
-  fi
-fi
+mysqldump -u root -p"$password" --all-databases > backup.sql;
+tar -czf "$current_date.tar.gz" backup.sql;
