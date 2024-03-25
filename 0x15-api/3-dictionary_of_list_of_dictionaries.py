@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This module uses an API to export information about an employee's
-todo list in json format.
+This module uses an API to export information about todo lists
+of employees in json format.
 """
 
 if __name__ == '__main__':
