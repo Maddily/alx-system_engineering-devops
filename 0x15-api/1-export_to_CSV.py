@@ -18,7 +18,6 @@ if __name__ == '__main__':
     employee_username = users.json()[employee_id - 1]['username']
 
     with open(f'{employee_id}.csv', 'w') as file:
-        writer = csv.writer(file)
         for todo in todos.json():
             if todo['userId'] == employee_id:
                 task_status = todo['completed']
