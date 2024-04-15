@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Reload Gunicorn
+
+sudo lsof -i :5003 | awk 'NR>1 {print $2}' | xargs kill -HUP
